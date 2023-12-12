@@ -1,0 +1,284 @@
+/*1.fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*02.config-padrao*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/*03.tag*/
+body {
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+h2 {
+    color: white;
+}
+
+button {
+    border: none;
+}
+
+/*04.classe*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.elemento {
+    width: 15em;
+    height: 21em;
+    display: flex;
+    flex-direction: column;
+}
+
+.elemento#result {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.score {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 4.6em;
+    height: 5em;
+    padding: 2em;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.score h2 {
+    font-size: 3em;
+}
+
+.score h3 {
+    font-size: 0.7em;
+    margin-top: -4%;
+    font-weight: bold;
+}
+
+.end-section {
+    text-align: center;
+    padding: 14%
+}
+
+.caixa {
+    width: 19em;
+    height: 3.5em;
+    font-size: 0.6em;
+    border-radius: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2.2%;
+}
+
+.number {
+    color:#AEACB1;
+    margin-right: 3%;
+}
+
+.efeito {
+    color: hsl(224, 30%, 27%);
+}
+
+.types {
+    width: 3.5em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 38%;
+}
+
+.icon {
+    width: 6.4%;
+    margin-left: 3%;
+}
+
+.btn {
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 0.7em;
+    background: #303b5a;
+    padding: 11px 70px 11px 70px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background: #7857ff;
+    background-image: -webkit-linear-gradient(top, #7857ff, #2e2be9);
+    background-image: -moz-linear-gradient(top, #7857ff, #2e2be9);
+    background-image: -ms-linear-gradient(top, #7857ff, #2e2be9);
+    background-image: -o-linear-gradient(top, #7857ff, #2e2be9);
+    background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
+    text-decoration: none;
+  }
+
+/*05.id*/
+#result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#title-1 {
+    font-size: 0.97em;
+    margin: 12% 0 10% 0;
+}
+
+#title-1, .score, .end-section {
+    text-align: center;
+}
+
+#title-1, #paragaph-1, .score h3 {
+    color: hsl(241, 100%, 89%);
+}
+
+#end-title {
+    font-size: 1.2em;
+    margin: -10% 0 5% 0 ;
+}
+
+#paragaph-1 {
+    font-size: 0.74em;
+}
+
+#summary {
+    margin-left: -1.1%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-top-right-radius: 8%;
+    border-bottom-right-radius: 8%;
+    box-shadow: -5px 10px 40px hsl(241, 100%, 89%);
+}
+
+#title-2 {
+    color:hsl(224, 30%, 27%);
+    font-size: 0.97em;
+    margin-right: 50%;
+    margin-top: -5%;
+}
+
+#reaction {
+    background-color:#FFF6F5;
+    margin-top: 10%;
+}
+
+#reaction-title {
+    color: #CA797B
+}
+
+#memory {
+    background-color: #FFFBF2;
+}
+
+#memory-title {
+    color: #E7CE88;
+}
+
+#verbal {
+    background-color: #F2FBFA;
+}
+
+#verbal-title {
+    color: #7BBFB0;
+}
+
+#visual {
+    background-color: #F3F3FD;
+    margin-bottom: 12%;
+}
+
+#visual-title {
+    color: #454991;
+}
+
+/*06.responsivel*/
+@media (max-width: 510px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elemento {
+        width: 20.8em;
+        height: 17em;
+    }
+
+    #title-1 {
+        font-size: 0.8em;
+        margin: 24% 0 0 0;
+    }
+
+    .elemento#result {
+        border-radius: 0 0 8% 8%;
+        margin-top: -21.4%;
+    }
+
+    .score {
+        width: 2.5em;
+        height: 2.5em;
+        margin-top: 4%;
+        margin-bottom: -5%;
+    }
+
+    .score h2 {
+        font-size: 2.6em;
+    }
+
+    #end-title {
+        font-size: 1.1em;
+    }
+
+    #paragaph-1 {
+        margin-top: -5%;
+        padding: 5%;
+    }
+
+    #summary {
+        margin-top: 7%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+    }
+
+    #title-2 {
+        color:hsl(224, 30%, 27%);
+        font-size: 0.9em;
+        margin: 5% 0 -5% -60%
+    }
+
+    .caixa {
+        width: 27em;
+        padding: 10px 0 10px 0;
+        font-size: 0.6em;
+    }
+
+    .btn {
+        font-size: 0.8em;
+        padding: 18px 116px 18px 116px;
+        margin-top: -4%;
+    }
+}
