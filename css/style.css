@@ -1,14 +1,14 @@
-/*1.fonts*/
+/*----------------01.fonts----------------*/
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
-/*02.config-padrao*/
+/*----------------02.config-padrao----------------*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: 0;
 }
 
-/*03.tag*/
+/*----------------03.tag----------------*/
 body {
     font-size: 18px;
     font-family: 'Hanken Grotesk', sans-serif;
@@ -26,7 +26,7 @@ button {
     border: none;
 }
 
-/*04.classe*/
+/*----------------04.classe----------------*/
 .container {
     display: flex;
     justify-content: center;
@@ -132,7 +132,7 @@ button {
     text-decoration: none;
   }
 
-/*05.id*/
+/*----------------05.id----------------*/
 #result {
     display: flex;
     align-items: center;
@@ -213,7 +213,7 @@ button {
     color: #454991;
 }
 
-/*06.responsivel*/
+/*----------------06.responsive----------------*/
 @media (max-width: 510px) {
     .container {
         display: flex;
